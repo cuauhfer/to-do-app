@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: Tahoma;
+  font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+  background-color: #21232A;
+  color: white;
+  font-family: "Helvetica Neue", Arial;
+  font-size: 1.3rem;
+  padding: 50px;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+form button{
+  width: 150px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  color: white;
+  height: 50px;
+  margin: 25px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+form button:hover{
+  transform: scale(1.05);
+}
+
+label{
+  font-size: 14px;
+}
+
+input[type=text]{
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  background: transparent;
+  outline: none;
+}
+
+input[type=number]{
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  background: transparent;
+  outline: none;
+}
+
+input::placeholder{
+  position: relative;
+  transition: all 0.25s;
+  top: 0;
+}
+
+input:focus::placeholder{
+  font-size: 12px;
+  top: -50%;
+  background: transparent !important;
+}
+
+.card-grid{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.card{
+  width: 20%;
+  margin: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.card p{
+  padding: 5px;
+  text-align: center;
+}
+
+.card img{
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+  border-radius: 5px 5px 0 0;
+}
+
+.long{
+  width: 75%;
+  margin: 10px auto;
+}
+
+.short{
+  width: 20%;
+  margin: 10px auto;
 }

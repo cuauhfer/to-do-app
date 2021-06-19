@@ -1,0 +1,48 @@
+h1{
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item{
+    background: transparent;
+    color: white;
+    border: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item span.controls{
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+.list-group-item span.controls button{
+    margin: 10px;
+}
+
+h4{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+input{
+    border-radius: 0 !important;
+    width: 75%;
+    height: 50px;
+}
